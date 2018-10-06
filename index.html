@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/main.css">
     <title>BG Studio</title>
   </head>
   <body>
-  	<header class="container-fluid">
+  	<header class="container-fluid position-absolute head">
   		<div class="container">
   			<nav class="navbar justify-content-between">
 	  			<img src="images/logo.png" class="navbar-brand" alt="BGStudio">
@@ -57,7 +58,7 @@
 				  			<h2>How can we build</h2>
 					  		<h1>AN AMAZING SITE</h1>
 					  		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the.</p>
-					  		<button>View Portfolio</button>
+					  		<button class="btn-custom btn-home">View Portfolio</button>
 					  	</div>
 				  	</div>
 				  	<div class="col-md-6">
@@ -68,35 +69,37 @@
 	  	</section>
 	  	<section class="about container-fluid">
 	  		<div class="container">
-	  			<div class="row">
+	  			<div class="row justify-content-center">
 		  			<h3>About BGStudio</h3>
 	  			</div>
 	  			<div class="row">
-		  			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of the type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+		  			<p class="text-center p-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of the type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 		  		</div>
 			  	<div class="row">
-			  		<div class="col-md-5">
+			  		<div class="col-md-5 pr-0">
 			  			<img src="images/about.png" class="img-fluid">
 			  		</div>
-			  		<div class="col-md-7 d-flex align-items-center">
-			  			<div class="">
+			  		<div class="col-md-7 d-flex align-items-center p-0">
+			  			<div class="about-story">
 			  				<p>Curabitur tempus, velit ac molestie consectetur, metus ex vestibulum turpis, non blandit libero mauris non mi. Nunc egestas viverra erat, eget scelerisque nisl maximus eu. Aenean faucibus erat nec leo aliquam placerat. Nulla dignissim, ante non tristique cursus, nibh odio feugiat nunc, non tempus magna ante at sem. Praesent ac tortor magna. Cras eu dui mattis, mollis est et, bibendum urna. Integer bibendum id ligula sit amet iaculis.</p>
+			  				<p>Mauris porta mattis feugiat. Sed commodo, massa quis tristique venenatis, risus sem commodo leo, id porttitor mauris purus a enim. Donec luctus neque vel pharetra maximus. Cras cursus, nisi vitae ultricies euismod, ligula leo vestibulum ipsum, a mollis leo ante non quam. Phasellus nisl ipsum, iaculis aliquet lectus sit amet, suscipit faucibus eros. Praesent metus turpis, porta hendrerit rutrum pretium, porta quis nisi. Fusce at dolor auctor, pretium elit at, elementum lacus.</p>
+			  				<p><a href="#">Read our Story</a></p>
 			  			</div>
 			  		</div>
 			  	</div>
 	  	</section>
-	  	<section class="new-here container-fluid">
-	  		<div class="container">
-	  			<div class="row">
-	  				<div class="col-md-5">
+	  	<section class="new-here container-fluid d-flex flex-column">
+	  		<div class="container d-flex flex-column flex-grow-1">
+	  			<div class="row flex-grow-1">
+	  				<div class="col-md-5 d-flex flex-column justify-content-center">
 	  					<h4>How can we build your online presence</h4>
 	  					<p>Lorem Ipsum is simply dummy text of the printing and typeset.</p>
 	  				</div>
-	  				<div class="col-md-7">
-	  					<form>
+	  				<div class="col-md-7 d-flex flex-column justify-content-center">
+	  					<form class="form-inline">
 	  						<input type="text" name="name" placeholder="Enter your full name">
-	  						<input type="email" name="email" placeholder="Enter your email address">
-	  						<input type="submit" value="Get it now!">
+	  						<input type="email" name="mail" placeholder="Enter your email address">
+	  						<input type="submit" value="Get it Now!" class="btn-custom btn-new-here">
 	  					</form>
 	  				</div>
 	  			</div>
@@ -104,15 +107,15 @@
 	  	</section>
 	  	<section class="offer container-fluid">
 	  		<div class="container">
-	  			<div class="row">
+	  			<div class="row justify-content-center">
 	  				<h3>What we do best</h3>
 	  			</div>
-	  			<div class="row">
-	  				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of the type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+	  			<div class="row offer-description">
+	  				<p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of the type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 	  			</div>
 	  			<div class="row">
 	  				<div class="col-md-6">
-	  					<div>
+	  					<div class="justify-content-center">
 		  					<figure class="rounded">
 		  						<img src="images/coaching.png">
 		  					</figure>
@@ -120,11 +123,11 @@
 		  						<h5>One to one coaching</h5>
 		  						<p>Curabitur tempus, velit ac molestie consectetur, metus ex vestibulum turpis, non blandit libero mauris non mi. Nunc egestas viverra erat, eget scelerisque nisl maximus eu. Aenean faucibus erat nec leo aliquam placerat. Nulla dignissim, ante non tristique cursus, nibh odio feugiat nunc, non tempus magna ante at sem. Praesent ac tortor magna tempus tempus magna.</p>
 		  					</div>
-		  					<button>Get it Now!</button>
+		  					<button class="btn-custom btn-get-it">Get it Now!</button>
 		  				</div>
 	  				</div>
 	  				<div class="col-md-6">
-	  					<div>
+	  					<div class="justify-content-center">
 		  					<figure class="rounded">
 		  						<img src="images/webdev.png">
 		  					</figure>
@@ -132,7 +135,7 @@
 		  						<h5>Website development</h5>
 		  						<p>Curabitur tempus, velit ac molestie consectetur, metus ex vestibulum turpis, non blandit libero mauris non mi. Nunc egestas viverra erat, eget scelerisque nisl maximus eu. Aenean faucibus erat nec leo aliquam placerat. Nulla dignissim, ante non tristique cursus, nibh odio feugiat nunc, non tempus magna ante at sem. Praesent ac tortor magna tempus tempus magna.</p>
 		  					</div>
-		  					<button>Learn More</button>
+		  					<button class="btn-custom btn-learn">Learn More</button>
 		  				</div>
 	  				</div>
 	  			</div>
@@ -140,7 +143,7 @@
 	  	</section>
 	  	<section class="opinion container-fluid">
 	  		<div class="container">
-	  			<div class="row">
+	  			<div class="row justify-content-center">
 	  				<h3>What our clients have to say...</h3>
 	  			</div>
 	  			<div class="row">
@@ -218,7 +221,7 @@
 			<div class="socials row justify-content-center">
 				<img src="images/fb.png">
 				<img src="images/tw.png">
-				<img src="images/ln.png">
+				<img src="images/in.png">
 			</div>
 		</div>
 	</footer>

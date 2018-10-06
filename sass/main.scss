@@ -1,0 +1,101 @@
+@import '_variables';
+@import url('https://fonts.googleapis.com/css?family=Damion|Roboto');
+
+body{
+	font-family: 'Robobto', 'sans-serif';
+}
+
+h1,h2{
+	text-transform: uppercase;
+}
+h3{
+	&:after{
+		content: "";
+    	height: 4px;
+    	width: 55px;
+    	background-color: $primary;
+    	display: block;
+    	margin: 20px auto;
+	}
+}
+
+.head,.home{
+	background: $primary;
+	color: white;
+}
+.home{
+	padding-top: 100px;
+	// max-height: 700px;
+}
+.btn-home{
+	background: $secondary;
+}
+.about{
+	padding: 78px 0 18px 0;
+}
+.about-story{
+	padding: 30px 20px 10px 20px;
+	background: $bg;
+}
+.new-here{
+	min-height: 140px;
+	padding: 15px;
+	background: $secondary;
+}
+form > input[name=name], form > input[name=mail]{
+	border-radius: inherit;
+    border: none;
+    padding: .375rem .75rem;
+    height: 44px;
+}
+form > input[name=mail]{
+	margin: 0 5px;
+}
+
+.offer{
+	padding: 80px 0;
+	background: $bg;
+}
+.offer-description{
+	padding-bottom:50px
+}
+
+.btn-custom{
+	display: inline-block;
+	width: 180px;
+	height:44px;
+	font-family: 'Damion';
+	font-size: 1.9em;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+}
+.btn-new-here, .btn-get-it{
+	background: $tertiary;
+}
+.btn-learn{
+	background: $quaternary;
+}
+.opinion{
+	padding: 80px 0;
+}
+
+.cooperation{
+	padding: 360px 0 130px 0;
+	// background: linear-gradient(0 deg, rgba($bg2,.5), rgba($bg2,.5)), url('../images/work.png'), cover, center center, no-repeat;
+	// background-image: url('../images/work.png');
+	// background-color: $bg2;
+	// background-size: cover;
+	// background-position: center;
+	background-color: $bg2;
+  	background-image: url("../images/work.png");
+  	background-size: cover;
+  	background-position: center;
+
+}
+
+footer{
+	background: $bg3;
+}
