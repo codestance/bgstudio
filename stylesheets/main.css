@@ -1,24 +1,62 @@
 @import url("https://fonts.googleapis.com/css?family=Damion|Roboto");
 body {
-  font-family: 'Robobto', 'sans-serif'; }
+  font-family: 'Roboto', 'sans-serif';
+  color: #828282; }
+
+#mainNav {
+  background: #02c6d8;
+  z-index: 99; }
+  #mainNav .dropdown-menu {
+    background: #02c6d8;
+    border: none; }
+
+#moreNav {
+  color: white; }
+
+.nav-link {
+  color: white;
+  text-transform: uppercase; }
 
 h1, h2 {
   text-transform: uppercase; }
 
-h3:after {
-  content: "";
-  height: 4px;
-  width: 55px;
-  background-color: #02c6d8;
-  display: block;
-  margin: 20px auto; }
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  color: #b4b4b4;
+  padding: 0 0.5em; }
+  h3:after {
+    content: "";
+    height: 4px;
+    width: 55px;
+    background-color: #02c6d8;
+    display: block;
+    margin: 20px auto; }
+
+.color-primary {
+  color: #02c6d8; }
+
+.color-secondary, .client {
+  color: #9068be; }
 
 .head, .home {
-  background: #02c6d8;
-  color: white; }
+  background: #02c6d8; }
 
 .home {
   padding-top: 100px; }
+
+.home-img {
+  max-height: 300px;
+  float: right; }
+  @media (min-width: 576px) {
+    .home-img {
+      float: none;
+      display: block;
+      margin: auto; } }
+  @media (min-width: 768px) {
+    .home-img {
+      max-height: none; } }
 
 .btn-home {
   background: #9068be; }
@@ -29,6 +67,8 @@ h3:after {
 .about-story {
   padding: 30px 20px 10px 20px;
   background: #f6f6f6; }
+  .about-story a {
+    color: #e46e48; }
 
 .new-here {
   min-height: 140px;
@@ -38,18 +78,39 @@ h3:after {
 form > input[name=name], form > input[name=mail] {
   border-radius: inherit;
   border: none;
-  padding: .375rem .75rem;
+  padding: .375em .75em;
   height: 44px; }
 
-form > input[name=mail] {
-  margin: 0 5px; }
+form > input {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em; }
 
 .offer {
   padding: 80px 0;
   background: #f6f6f6; }
 
-.offer-description {
-  padding-bottom: 50px; }
+.description {
+  padding: 0 20px 30px 20px;
+  color: #b4b4b4; }
+
+.offer-figure, .offer-figure-coaching, .offer-figure-development {
+  width: 148px;
+  height: 148px;
+  line-height: 148px;
+  position: relative;
+  z-index: 1; }
+
+.offer-figure-coaching {
+  background: #9068be; }
+
+.offer-figure-development {
+  background: #02c6d8; }
+
+.offer-option {
+  box-shadow: 0px 0px 5px 0px #828282;
+  background: white;
+  padding: 90px 1.5em 1em 1.5em;
+  margin-top: -90px; }
 
 .btn-custom {
   display: inline-block;
@@ -63,21 +124,49 @@ form > input[name=mail] {
   vertical-align: middle;
   border: none; }
 
-.btn-new-here, .btn-get-it {
+.btn-new-here, .btn-get-it, .btn-work {
   background: #e46e48; }
 
 .btn-learn {
-  background: #326c73; }
+  background: #326c73;
+  margin-top: -21px; }
 
-.opinion {
+.btn-get-it {
+  margin-top: -21px; }
+
+.opinions {
   padding: 80px 0; }
 
+.opinions-opinion {
+  box-shadow: 0px 0px 5px 0px #828282;
+  padding: 3em 1em 3.5em 1em;
+  margin: -2em 0 -52px 0;
+  font-style: italic; }
+
+.client {
+  font-family: 'Damion';
+  font-size: 1.5em;
+  margin: 0; }
+
 .cooperation {
-  padding: 360px 0 130px 0;
-  background-color: #326c73;
-  background-image: url("../images/work.png");
-  background-size: cover;
-  background-position: center; }
+  padding: 200px 0 130px 0;
+  background: linear-gradient(0deg, rgba(50, 108, 115, 0.9), rgba(50, 108, 115, 0.9)), url("../images/work.png") center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .cooperation p {
+    font-size: 1.5em; }
 
 footer {
-  background: #011e22; }
+  background: #011e22;
+  padding: 1em; }
+
+.socials {
+  padding: 5px 0; }
+  .socials figure {
+    width: 25px;
+    height: 25px;
+    background: #828282;
+    margin: 0 5px;
+    text-align: center; }
