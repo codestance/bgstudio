@@ -14,8 +14,17 @@ body{
 		background: $primary;
 		border: none;
 	}
+	.dropdown-item{
+		&:hover{
+			background: transparent;
+			color: $link-hover;
+		}	
+	}
 }
 #moreNav{
+	color: white;
+}
+.navbar-dark .navbar-nav .nav-link{
 	color: white;
 }
 .nav-link{
