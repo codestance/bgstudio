@@ -9,8 +9,14 @@ body {
   #mainNav .dropdown-menu {
     background: #02c6d8;
     border: none; }
+  #mainNav .dropdown-item:hover {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.5); }
 
 #moreNav {
+  color: white; }
+
+.navbar-dark .navbar-nav .nav-link {
   color: white; }
 
 .nav-link {
